@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+             body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #c0deff ;
+            text-decoration: underline;
+        }
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 220px; /* Oval shape */
+            border-radius: 50% / 40%; /* Oval effect */
+            border: 4px solid white;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .about-content {
+            max-width: 500px;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('79b4175c0b1f.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        form {
+            background-color: rgba(18, 18, 18, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 270px;
+            height: 400px;
+            border-radius: 100%;
+            border: 4px solid white;
+            margin-right: 20px;
+        }
+
+        .about-content {
+            max-width: 500px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #0073e6;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        .button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #005bb5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .contact-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer{
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="blog.html">Home</a>
+            <a href="contact.html">About Me</a>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <img src="portfoliopic.jpeg" alt="Kartik Nareshrao Yamsanwar" class="profile-pic">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> Kartik Nareshrao Yamsanwar</p>
+            <p><strong>Mobile No.:</strong> +91 7888097698</p>
+            <p><strong>Email:</strong> kartikscodeparadise@gmail.com</p>
+            <p><strong>Current Location:</strong> Pune, India</p>
+            <p><strong>Permanent Location:</strong> Ghatanji, Yavatmal, India</p>
+            <p>I'm a passionate B.Tech student specializing in Computer Science, with expertise in front-end development, 
+              problem-solving, and project management. Currently, I own Kartik's Code Paradise, where I develop engaging web 
+              experiences. <a href="https://kartikscodeparadise.web.app/ViewmyWork.html">Know More</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kartik-yamsanwar-5129142b6/">LinkedIn</a>
+                <a href="https://x.com/KartikYamsanwar">Twitter</a>
+                <a href="https://github.com/Kartikyamsanwar?tab=stars">GitHub</a>
+                <a href="https://www.whatsapp.com/channel/0029VafhD3w0VycKLUZGXs1L">WhatsApp</a>
+                <a href="https://t.me/KartikYamsanwar">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <form action="/submit_contact_form" method="post">
+            <h1>Get in Touch</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="button">Send Message</button>
+        </form>
+        <div class="contact-btn">
+            <a href="mailto:kartikyamsanwar12@gmail.com" class="button">Email Me</a>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <a href="https://kartikscodeparadise.web.app/TandC.html">
+          <p>© 2024 Kartik's Code Paradise. All Rights Reserved.</p>
+        </a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kartik-yamsanwar-5129142b6/" class="text-white">LinkedIn</a> 
+          <a href="https://x.com/KartikYamsanwar" class="text-white">Twitter</a> 
+          <a href="https://github.com/Kartikyamsanwar?tab=stars"class="text-white">GitHub</a>
+          <a href="https://www.whatsapp.com/channel/0029VafhD3w0VycKLUZGXs1L" class="text-white">Whatsapp</a> 
+          <a href="https://t.me/KartikYamsanwar" class="text-white">Telegram</a>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <a href="https://kartikscodeparadise.web.app/">
+                <img src="brandlogo250.jpg" alt="Kartik's Code Paradise Logo">
+            </div>
+            </a>
+        
+      </footer>
+</body>
+</html>

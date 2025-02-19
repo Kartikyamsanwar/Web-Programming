@@ -10,144 +10,211 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+            background-image: url('artificial_intelligence_machine_learning_network_thinkstock_671750598-100724432-orig.webp');
         }
 
         header {
-            background-color: #0073e6;
+            background-color: #1e1e1e;
             color: white;
             padding: 20px;
             text-align: center;
+            width: 100%;
+        }
+        
+        footer{
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(18, 18, 18, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            
         }
 
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+            color: #c0deff ;
+            text-decoration: underline;
         }
 
         h2 {
             font-size: 2em;
             color: #0056b3;
             margin-top: 20px;
+           
         }
 
         p {
             font-size: 1.1em;
             margin: 10px 0;
             padding: 10px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .social-links {
+            margin-top: 10px;
         }
 
-        strong {
-            color: #d9534f;
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
         }
 
-
-        .highlight {
-            background-color: #e6f7ff;
-            border-left: 5px solid #0073e6;
-            padding-left: 10px;
-            font-style: italic;
+        .social-links a:hover {
+            background-color: #0073e6;
         }
 
-        .double {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .double p {
-            flex: 1 1 calc(50% - 20px);
-        }
-
-        .width{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            max-width: 50vw;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>How AI is Transforming the World</h1>
+        <nav>
+            <a href="contact.html">About Me</a>
+            <a href="blog.html">Home</a>
+            
+        </nav>
     </header>
 
-    <main>
-        <p class="highlight">Artificial Intelligence (AI) is no longer a distant dream; it's an integral part of our reality, 
-            redefining industries, societies, and the way we live. As someone passionate about technology and coding, I see AI as
-             a double-edged sword—an unparalleled force of innovation that must be wielded responsibly.</p>
-<div class="width">
-    <h2>Revolutionizing Industries:</h2>
-    <div class="double">
-        <p>AI has become a cornerstone of various industries, from healthcare and education to finance and entertainment. 
-            In healthcare, AI-powered systems are diagnosing diseases with precision, speeding up drug discovery, and personalizing 
-            treatment plans.</p>
-        <p>As a coding professional, I'm fascinated by how AI-driven automation is streamlining software development. Tools like 
-            GitHub Copilot assist in writing efficient code, accelerating development cycles. This enables programmers to focus on 
-            creative problem-solving rather than repetitive tasks.</p>
-    </div>
-</div>
-        <div class="width">
-            <h2>Enhancing Everyday Life:</h2>
-            <div class="double">
-               
-                <p>
-                    AI has seamlessly integrated into our daily lives. Virtual assistants like Alexa, Siri, and Google Assistant have 
-                    become our go-to companions, helping us with reminders, navigation, and even casual conversations. Recommendation 
-                    algorithms on platforms like Netflix and YouTube curate content tailored to our preferences, making decision-making 
-                    effortless.
-                </p>
-        
-                <p>
-                    In the realm of transportation, self-driving cars promise safer and more efficient roads. For someone like me, living 
-                    in an era where technology continuously evolves, these advancements are both exciting and inspiring.
-                </p>
-            </div>
+
+    <main class="container">
+        <div class="column">
+            <h1>Welcome to My Blog</h1>
+            <p>
+                Welcome to a space where thoughts transform into words and words spark inspiration. This blog is more than just a collection of articles—it's a
+                 journey through ideas, stories, and experiences that aim to enlighten, entertain, and engage.
+            </p>
+            <p>
+                Here, we dive deep into topics that matter, exploring trends, sharing knowledge, and sparking conversations. Whether you're here to learn, to 
+                ponder, or to simply take a break from the everyday hustle, you'll find something that resonates with you. From technology and lifestyle to self-growth 
+                and creativity, there's a bit of everything to explore.
+            </p>
+            <p>
+                Pull up a chair, grab your favorite drink, and let's embark on this journey together. Feel free to leave your thoughts, comments, and ideas—because every 
+                voice matters here.
+            </p>
            
         </div>
-
-<div class="width">
-    <h2>Empowering Businesses:</h2>
-    <div class="double">
-        <p>Businesses are leveraging AI to gain insights, predict trends, and improve customer experiences. AI-driven analytics 
-            tools provide valuable data that help organizations make informed decisions. Chatbots and virtual agents are enhancing
-             customer support, ensuring instant and personalized interactions.</p>
-
-        <p>From startups to tech giants, companies are harnessing AI to stay competitive. As the owner of 
-            <strong>KARTIK'S CODE PARADISE</strong>, I envision incorporating AI to develop smarter, more dynamic applications
-             that adapt to user needs.</p>
+        <div class="row">
+            <div class="column">
+                <h2>Revolutionizing Industries:</h2>
+                <p>AI has become a cornerstone of various industries, from healthcare and education to finance and entertainment. 
+                    In healthcare, AI-powered systems are diagnosing diseases with precision, speeding up drug discovery, 
+                    and personalizing treatment plans.</p>
+                    <a href="RI.html">View More</a>
             </div>
-
-        </div>   
-        <div class="width">
-            <h2>The Future of AI:</h2>
-            <div class="double"></div>
-            <p>
-                Looking ahead, AI has the potential to solve global challenges such as climate change, hunger, and poverty. From
-                 predicting natural disasters to optimizing resource distribution, AI could be a catalyst for a better world.
-            </p>
-    
-            <p>
-                However, its future depends on how we shape it today. Collaboration between governments, businesses, and individuals 
-                is essential to create policies and frameworks that promote ethical AI development.
-            </p>
+            <div class="column">
+                <h2>Enhancing Everyday Life:</h2>
+                <p>AI has seamlessly integrated into our daily lives. Virtual assistants like Alexa, Siri, and Google Assistant 
+                    help us with reminders, navigation, and even casual conversations.</p>
+                    <a href="EEL.html">View More</a>
+                </div>
         </div>
-       <div class="width">
-        <h2>Conclusion:</h2>
-        <div class="double">
-            <p>AI is not just changing the world—it's revolutionizing how we think, work, and live. As a technologist and enthusiast, 
-                I see AI as a powerful tool that can amplify human potential and address global challenges.</p>
-            <p>Let's harness AI responsibly and creatively to make the world a better place for generations to come.</p>
+        
+        <div class="row">
+            <div class="column">
+                <h2>Empowering Businesses:</h2>
+                <p>Businesses are leveraging AI to gain insights, predict trends, and improve customer experiences. AI-driven 
+                    analytics tools provide valuable data that help organizations make informed decisions.</p>
+                    <a href="EB.html">View More</a>
+                </div>
+            <div class="column">
+                <h2>The Future of AI:</h2>
+                <p>Looking ahead, AI has the potential to solve global challenges such as climate change, hunger, and poverty. 
+                    From predicting natural disasters to optimizing resource distribution, AI could be a catalyst for a better world.</p>
+                    <a href="FA.html">View More</a>
+                </div>
         </div>
-       </div>
+<div class="column">
+    <h2>Conclusion:</h2>
+    <p>AI is not just changing the world—it's revolutionizing how we think, work, and live. As a technologist and enthusiast, I 
+        see AI as a powerful tool that can amplify human potential and address global challenges.</p>
 
-        
-        
+</div>
+       
     </main>
-
+    <footer class="bg-dark text-white text-center py-4">
+        <a href="https://kartikscodeparadise.web.app/TandC.html">
+          <p>© 2024 Kartik's Code Paradise. All Rights Reserved.</p>
+        </a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kartik-yamsanwar-5129142b6/" class="text-white">LinkedIn</a> 
+          <a href="https://x.com/KartikYamsanwar" class="text-white">Twitter</a> 
+          <a href="https://github.com/Kartikyamsanwar?tab=stars"class="text-white">GitHub</a>
+          <a href="https://www.whatsapp.com/channel/0029VafhD3w0VycKLUZGXs1L" class="text-white">Whatsapp</a> 
+          <a href="https://t.me/KartikYamsanwar" class="text-white">Telegram</a>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <a href="https://kartikscodeparadise.web.app/">
+                <img src="brandlogo250.jpg" alt="Kartik's Code Paradise Logo">
+            </div>
+            </a>
+        
+      </footer>
+    
 </body>
 </html>
