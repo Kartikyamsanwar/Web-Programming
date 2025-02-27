@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .gallery-img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+        #Read_More {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        #Read_More {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Image Gallery</h1>
+        <h2 class="text-center mb-4">Robots used as Weapons</h2>
+        
+        <div class="row gallery">
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="Robots-AI-and-jobs.jpg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="360_F_567867733_Rl8CdJXRq5HwSx8BBbQoohbH7Q4QFFW7.jpg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="360_F_683664331_mlLVyNI5Qd3NR6qnRjkEXdJVwafwRZ35.jpg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.03.01 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.04.25 PM.jpg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.03.41 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+        </div>
+        
+        <div class="text-center mt-3">
+            <button class="btn-custom" onclick="ReadMore()">Read More</button>
+        </div>
+
+        <div id="Read_More" class="row gallery mt-4">
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="19cbf704-fa9d-4034-9d68-24d15acb1aa2.jfif" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.48.31 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.47.56 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+       
+
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.53.23 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.53.09 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.52.54 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.53.42 PM (1).jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.57.29 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.57.32 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.57.41 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.57.44 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.57.46 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.57.48 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.57.49 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.58.00 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.58.02 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.58.07 PM (1).jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.58.07 PM (2).jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.58.07 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.58.08 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="info.html">
+                <img src="WhatsApp Image 2025-02-27 at 12.59.30 PM.jpeg" class="img-fluid" alt="Achievement 1">
+            </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function ReadMore() {
+            var info = document.getElementById("Read_More");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "flex";
+                setTimeout(() => info.style.opacity = "1", 50);
+            } else {
+                info.style.opacity = "0";
+                setTimeout(() => info.style.display = "none", 500);
+            }
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
